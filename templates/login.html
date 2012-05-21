@@ -1,0 +1,21 @@
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" py:replace="''"/>
+  <title>Login</title>
+</head>
+<body>
+
+<div id="content">
+<form action="${action}" method="POST">
+<p style="color:red;">${error}</p>
+<p>login<input name="login" type="text"></input></p>
+<p>password<input name="password" type="password"></input></p>
+<p><input type="hidden" name="redirect" value="${redirect}"></input></p>
+<p><input type="submit" value="login"></input></p>
+</form>
+</div>
+</body>
+</html>
